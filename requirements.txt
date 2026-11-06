@@ -1,0 +1,9 @@
+numpy
+scipy
+scikit-image
+tifffile
+pyyaml
+pandas
+matplotlib
+gdown      # notebook 00 only
+kaggle     # notebook 00 only

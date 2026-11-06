@@ -1,7 +1,7 @@
 # Dataset loaders.  Owner: P1
 from pathlib import Path
 import numpy as np, skimage.io as io
-ROOT = Path('/content/drive/MyDrive/DSP_Deconv')
+ROOT = Path(__file__).resolve().parents[1]
 
 def _read(p):
     im = io.imread(p).astype(np.float64)

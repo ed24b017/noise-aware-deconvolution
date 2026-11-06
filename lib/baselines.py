@@ -44,7 +44,7 @@ def rl(y, psf, n_iter=30):
     return richardson_lucy(np.clip(y, 1e-6, None), psf, num_iter=n_iter, clip=False)
 
 def unsup_wiener(y, psf):
-    return unsupervised_wiener(y, psf, clip=False)[0]
+    return unsupervised_wiener(y, psf, clip=False, rng=0)[0]
 
 def padded(method, y, psf, pad=32, **kw):
     """Mirror-pad before FFT deconvolution, crop after: removes border ringing (used in S7)."""
